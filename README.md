@@ -1,1 +1,1 @@
-# extracting_geographic_information_from_news_articles
+# Collection of resources around computationally mapping news deserts
