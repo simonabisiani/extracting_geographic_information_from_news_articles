@@ -24,7 +24,6 @@ scraper <- function(urls) {
 
 # iterate over the urls
 ipso_members <- map_dfr(urls, scraper)
-ipso_members$date <- Sys.Date()
 
-write.csv(ipso_members, file = paste0("data-raw/ipso_members_", make.names(Sys.date()), ".csv")
+write.csv(ipso_members, file = paste0("data_raw/ipso_members_", make.names(Sys.date()), ".csv"))
 
