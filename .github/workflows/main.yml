@@ -9,7 +9,7 @@ on:
 jobs:
   autoscrape:
     # The type of runner that the job will run on
-    runs-on: macos-latest
+    runs-on: windows-latest
 
     # Load repo and install R
     steps:
@@ -33,7 +33,7 @@ jobs:
         git config --local user.email "actions@github.com"
         git add data_raw/*
         git commit -am "GH ACTION Autorun $(date)"
-        git push origin master
+        git push origin main
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
         username: github-actions
